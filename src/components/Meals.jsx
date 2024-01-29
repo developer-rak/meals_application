@@ -1,6 +1,6 @@
 const Meals = () => {
     return (
-        <h1>Meals Component</h1>
+        <h3>Meals Component</h3>
     );
 }
  
