@@ -3,10 +3,16 @@ import { useGlobalContext } from "../context";
 const Meals = () => {
     const {meals} = useGlobalContext();
     
-    return <section>
+    return <section className="section-center">
         {meals.map((singleMeal) => {
-            console.log(singleMeal)
-            return <h4>single meals</h4>
+            const { idMeal, strMeal, title, strMealThumb: image } = singleMeal
+            return <article key={idMeal} className="single-meal">
+                <img src={image} style={{ width: '200px' }} className="img" />
+                <footer>
+                    <h5>{ title }</h5>
+                    <button className="like-btn">Click Me</button>
+                </footer>
+            </article>
         })}
     </section>
 }
