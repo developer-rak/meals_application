@@ -239,6 +239,8 @@ ul {
   width:var(--view-width);
   max-width:var(--max-width);
   margin:0 auto;
+}
+.section-center {
   display:grid;
   gap:2rem;
 }
