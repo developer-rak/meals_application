@@ -3,7 +3,7 @@ import { useGlobalContext } from "../context";
 const Modal = () => {
     return <aside className="modal-overlay">
         <div className="modal-container">
-            Modal content here
+            <h1>Modal container</h1>
         </div>
     </aside>
 }
