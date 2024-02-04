@@ -2,7 +2,7 @@ import './App.css';
 import Search from './components/Search';
 // import Favorites from './components/Favorites';
 import Meals from './components/Meals';
-// import Modals from './components/Modals';
+import Modals from './components/Modals';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Search />
         {/* <Favorites /> */}
         <Meals />
-        {/* <Modals /> */}
+        <Modals />
       </main>
   );
 }

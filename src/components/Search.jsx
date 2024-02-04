@@ -12,8 +12,12 @@ const Search = () => {
         e.preventDefault()
         if(text) {
             setSearchTerm(text)
-            setText('')
         }
+    }
+    const handleRandomMeal = () => {
+        setSearchTerm('')
+        setText('')
+        fetchRandomMeal()
     }
 
     return (
@@ -21,7 +25,7 @@ const Search = () => {
             <form onSubmit={handleSubmit}>
                 <input type="text" onChange={handleChange} value={text} placeholder='type favorite meal' className="form-input" />
                 <button type='submit' className="btn">Search</button>
-                <button type='button' className="btn btn-hipster" onClick={fetchRandomMeal}>Surprize me!</button>
+                <button type='button' className="btn btn-hipster" onClick={handleRandomMeal}>Surprize me!</button>
             </form>
         </header>
     );
