@@ -11,6 +11,7 @@ const AppProvider = ({ children }) => {
     const [meals, setMeals] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [showModal, setShowModal] = useState(true);
+    const [selectedMeal, setSelectedMeal] = useState(null);
 
     const fetchRandomMeal = () => {
         fetchMeals(randomMealUrl)
