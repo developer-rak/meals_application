@@ -4,6 +4,7 @@ import Favorites from './components/Favorites';
 import Meals from './components/Meals';
 import Modal from './components/Modal';
 import { useGlobalContext } from './context';
+import Footer from './components/Footer';
 
 function App() {
   const { showModal, favorites } = useGlobalContext()
@@ -14,6 +15,8 @@ function App() {
         {favorites.length > 0 && <Favorites />}
         <Meals />
         {showModal && <Modal />}
+
+        <Footer />
       </main>
   );
 }

@@ -162,8 +162,7 @@ ul {
   width: 100%;
 }
 /* End Of Global Styles */
-/* End Of Global Styles */
-/* End Of Global Styles */
+
 
 /* Search */
 .search-container{
@@ -338,4 +337,15 @@ ul {
 .close-btn{
   background:var(--red-dark);
   color:var(--white);
+}
+
+/* Footer */
+.copy-footer{
+  width: 100%;
+  height: 50px;
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  display: block;
+  padding-top: 10px;
 }
