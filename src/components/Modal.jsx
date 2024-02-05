@@ -7,7 +7,7 @@ const Modal = () => {
 
     return <aside className="modal-overlay">
         <div className="modal-container">
-            <img src={image} alt="" className="img modal-img" />
+            <img src={image} alt={title} className="img modal-img" />
             <div className="modal-content">
                 <h4>{ title }</h4>
                 <p>Cooking Instructions</p>
